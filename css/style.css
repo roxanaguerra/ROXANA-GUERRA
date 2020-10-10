@@ -720,6 +720,14 @@ width: 50%;
   background-color: #e03a3c;
 }
 
+.row {
+  padding: 10px;
+}
+.about-info {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+}
 /*======================================
 //--//-->   SERVICES
 ======================================*/
@@ -913,7 +921,7 @@ width: 50%;
   color: #fff;
   background-color: #e03a3c;
   border-color: #e03a3c;
-  font-size: larger;
+  /* font-size: larger; */
 }
 
 .btn-cv:hover {
@@ -1023,7 +1031,7 @@ footer .credits a {
 }
 
 #service, #service {
-  background: linear-gradient(rgba(239, 232, 232, 0.9), rgba(255, 255, 255, 0.96)), url(../img/work-3.jpg) fixed center center;
+  background: linear-gradient(rgba(239, 232, 232, 0.9), rgba(255, 255, 255, 0.96)), url(../img/escritorio3.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -1294,6 +1302,12 @@ ul.social-network li a i {
   .contact-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
+  }
+  .row {
+    padding: 15px;
+  }
+  .about-info {
+    padding: 15px;
   }
 }
 
