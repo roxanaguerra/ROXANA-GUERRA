@@ -98,6 +98,7 @@ a:hover {
   background-position: center center;
 }
 
+
 .overlay-mf {
   background-color: #e1d0de;
 }
@@ -685,8 +686,8 @@ img {
 ======================================*/
 
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
 }
 
 .about-me {
@@ -941,16 +942,32 @@ width: 50%;
 ======================================*/
 
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .contact-mf {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .cantacto-icon {
   margin-top: 15%;
 }
+
+#contact-section {
+  /* background: linear-gradient(rgba(239, 232, 232, 0.9), rgba(255, 255, 255, 0.96)), url(../img/escritorio3.jpg) fixed center center; */
+  /* style="background-image: url(img/contact.jpg)" */
+  /* background-color: #f7b7b8; */
+  background-image: url(../img/contact.jpg)
+}
+.box-shadow-full2 {
+  padding: 1rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
 /*======================================
 //--//-->   FOOTER
 ======================================*/
@@ -1195,8 +1212,8 @@ Bottom widget
   animation-name: bounceInLeft;
 }
 .home-section {
-  width: 100%;
-  padding: 30px 0px 30px 0px;
+  /* width: 100%; */
+  padding: 10px 0px 10px 0px;
 }
 .contact-widget i {
   color: #e03a3c;
