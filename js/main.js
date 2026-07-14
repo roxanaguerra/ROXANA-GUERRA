@@ -101,18 +101,19 @@
 		});
 	}
 	
-	// Porfolio isotope and filter
-	$(window).on('load', function () {
-		var portfolioIsotope = $('.portfolio-container').isotope({
-		  itemSelector: '.portfolio-item'
-		});
-		$('#portfolio-flters li').on( 'click', function() {
-		  $("#portfolio-flters li").removeClass('filter-active');
-		  $(this).addClass('filter-active');
-	  
-		  portfolioIsotope.isotope({ filter: $(this).data('filter') });
-		});
-	  });
+	// Portfolio filter
+	$('#portfolio-flters li').on('click', function () {
+		$('#portfolio-flters li').removeClass('filter-active');
+		$(this).addClass('filter-active');
+
+		var filterValue = $(this).attr('data-filter');
+		if (filterValue === '*') {
+			$('.portfolio-item').stop(true, true).fadeIn(400);
+		} else {
+			$('.portfolio-item').stop(true, true).hide();
+			$(filterValue).stop(true, true).fadeIn(400);
+		}
+	});
 
 	/*--/ Testimonials owl /--*/
 	$('#testimonial-mf').owlCarousel({
