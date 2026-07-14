@@ -65,6 +65,47 @@ Sigue la URL que muestre la terminal (por ejemplo, `http://localhost:3000`).
 2. Abre la carpeta del proyecto.
 3. Haz clic derecho en `index.html` → **Open with Live Server**.
 
+## Publicar cambios en GitHub Pages
+
+El sitio está publicado con [GitHub Pages](https://pages.github.com/) desde la rama `gh-pages`.
+
+**URL del sitio:** [https://roxanaguerra.github.io/ROXANA-GUERRA/](https://roxanaguerra.github.io/ROXANA-GUERRA/)
+
+### Flujo para cada modificación
+
+Después de editar archivos localmente, sigue estos pasos para que los cambios se vean en el sitio publicado:
+
+```bash
+# 1. Guardar los cambios en git
+git add .
+git commit -m "Descripción breve del cambio"
+
+# 2. Subir los cambios a la rama principal
+git push origin master
+
+# 3. Publicar en GitHub Pages (actualizar la rama gh-pages)
+git push origin master:gh-pages
+```
+
+### Después del push
+
+1. Espera **1–3 minutos** mientras GitHub Pages actualiza el sitio.
+2. Verifica el estado en **GitHub → Settings → Pages** de tu repositorio.
+3. Abre el sitio y recarga con caché limpia: `Ctrl + F5` (Windows) o `Ctrl + Shift + R`.
+
+### Alternativa: merge manual en gh-pages
+
+Si prefieres trabajar con la rama `gh-pages` localmente:
+
+```bash
+git checkout gh-pages
+git merge master
+git push origin gh-pages
+git checkout master
+```
+
+> **Nota:** Los cambios en `master` no se publican solos. Siempre debes actualizar `gh-pages` para que el sitio en línea refleje las modificaciones.
+
 ## Estructura del proyecto
 
 ```
